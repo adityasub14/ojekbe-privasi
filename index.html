@@ -5,43 +5,87 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kebijakan Privasi Ojekbe</title>
 <style>
-body{font-family:Georgia,"Times New Roman",Times,serif;line-height:1.75;color:#000;background:#fff;margin:0}
-main{max-width:760px;margin:0 auto;padding:32px 24px 64px}
-h1{font-size:26px;margin:0 0 6px;color:#000;text-align:center;text-transform:uppercase;letter-spacing:.5px}
-h2{font-size:17px;margin:30px 0 6px;color:#000;border-bottom:1px solid #000;padding-bottom:4px}
-p{margin:8px 0;text-align:justify;color:#000}
-a{color:#000;text-decoration:underline}
-.kecil{color:#000;font-size:14px;text-align:center}
-.kotak{background:#fff;border:1px solid #000;border-radius:0;padding:14px 16px;margin:20px 0}
-.kotak p{text-align:left}
+:root{--teal:#03a0bb;--tipis:#e6f6f9;--garis:#e5e7eb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:#000;background:#f4f6f7;line-height:1.65;-webkit-text-size-adjust:100%}
+a{color:#000}
+.atas{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--garis)}
+.atas div{max-width:860px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.atas .merek{font-size:21px;font-weight:800;letter-spacing:-.4px;color:#000}
+.atas span{font-size:14px;font-weight:600;color:#000}
+.hero{background:var(--tipis)}
+.hero div{max-width:860px;margin:0 auto;padding:40px 20px 34px}
+.hero h1{margin:0 0 10px;font-size:clamp(30px,6vw,44px);line-height:1.1;font-weight:800;letter-spacing:-1px;color:#000}
+.hero .tgl{display:inline-block;background:#fff;border:1px solid var(--garis);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;color:#000;margin-bottom:14px}
+.hero p{margin:0;max-width:640px;font-size:16px;color:#000}
+.isi{max-width:860px;margin:0 auto;padding:20px 20px 56px}
+.chip{display:flex;gap:8px;overflow-x:auto;padding:4px 0 18px;margin:0 -20px;padding-left:20px;padding-right:20px;scrollbar-width:none}
+.chip::-webkit-scrollbar{display:none}
+.chip a{flex:none;text-decoration:none;font-size:14px;font-weight:600;color:#000;background:#fff;border:1px solid var(--garis);border-radius:999px;padding:8px 14px}
+.chip a:hover{border-color:#000}
+.kartu{background:#fff;border:1px solid var(--garis);border-radius:20px;padding:22px 24px;margin:0 0 14px;scroll-margin-top:72px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.kartu h2{margin:0 0 10px;font-size:19px;line-height:1.3;font-weight:800;letter-spacing:-.2px;color:#000;display:flex;align-items:center;gap:10px}
+.no{flex:none;min-width:30px;height:30px;padding:0 8px;border-radius:10px;background:var(--teal);color:#000;font-size:14px;font-weight:800;display:inline-flex;align-items:center;justify-content:center}
+.kartu p{margin:8px 0 0;font-size:15.5px;color:#000}
+.kontak{background:var(--teal);border-radius:20px;padding:24px;margin:20px 0 14px;color:#000}
+.kontak h2{margin:0 0 4px;font-size:20px;font-weight:800;color:#000}
+.kontak p{margin:0 0 16px;font-size:15px;color:#000}
+.tombol{display:flex;flex-wrap:wrap;gap:10px}
+.tombol a{display:inline-flex;flex-direction:column;background:#fff;border-radius:14px;padding:10px 16px;text-decoration:none;color:#000;min-width:220px;flex:1 1 220px}
+.tombol small{font-size:12px;font-weight:600;color:#000}
+.tombol strong{font-size:15px;font-weight:700;color:#000;word-break:break-all}
+.kaki{text-align:center;font-size:13px;color:#000;margin:22px 0 0}
+@media (max-width:520px){.kartu{padding:18px 16px;border-radius:16px}.kontak{border-radius:16px}}
 </style>
 </head>
 <body>
-<main>
-<h1>Kebijakan Privasi Ojekbe</h1>
-<p class="kecil">Terakhir diperbarui: November 2026</p>
+<header class="atas"><div><span class="merek">Ojekbe</span><span>Kebijakan Privasi</span></div></header>
+<section class="hero"><div>
+<span class="tgl">Terakhir diperbarui: November 2026</span>
+<h1>Kebijakan Privasi</h1>
 <p>Halaman ini menjelaskan data apa saja yang diminta aplikasi Ojekbe (id.ojekbe.app), untuk apa dipakai, dan apa yang bisa kamu lakukan dengan datamu.</p>
-<h2>1. Data yang Kami Simpan</h2>
+</div></section>
+<main class="isi">
+<nav class="chip"><a href="#s1">Data yang Kami Simpan</a><a href="#s2">Untuk Apa Data Dipakai</a><a href="#s3">Siapa yang Bisa Melihat Datamu</a><a href="#s4">Penyimpanan dan Layanan Pihak Ketiga</a><a href="#s5">Izin di HP</a><a href="#s6">Hakmu dan Penghapusan Akun</a><a href="#s7">Menghapus Akun dan Data</a></nav>
+<section class="kartu" id="s1">
+<h2><span class="no">1</span>Data yang Kami Simpan</h2>
 <p>Saat mendaftar kami meminta nama, nomor HP, dan email. PIN yang kamu buat disimpan dalam bentuk acak yang tidak bisa dibaca balik. Foto profil yang kamu unggah disimpan di server kami. Untuk penumpang, kami menyimpan titik jemput dan tujuan, jarak, tarif, cara bayar, status pesanan, pesan obrolan dengan driver, serta rating dan ulasan. Untuk driver, kami menyimpan nama, plat, kendaraan, status aktif, posisi GPS selama berstatus Online, order yang diambil, dan catatan komisi. Kalau kamu mendaftar jadi mitra driver, kami menyimpan data pendaftaranmu: nama, nomor HP, alamat, merek dan tahun motor, plat, status SIM C dan pajak kendaraan, serta pengalamanmu, yang hanya dilihat admin untuk menilai pendaftaran. Kami juga menyimpan token notifikasi perangkat, laporan yang kamu kirim ke admin, dan catatan pembatalan pesanan. Kami tidak menyimpan data kartu atau rekening bank</p>
-<h2>2. Untuk Apa Data Dipakai</h2>
+</section>
+<section class="kartu" id="s2">
+<h2><span class="no">2</span>Untuk Apa Data Dipakai</h2>
 <p>Untuk membuat akunmu, mengirim kode verifikasi ke email, mempertemukan penumpang dengan driver terdekat, menghitung tarif dan komisi, menyimpan riwayat perjalanan, membantu kalau kamu melapor masalah, serta menjaga keamanan dan mencegah penyalahgunaan seperti lokasi palsu dan pembatalan berulang. Kami tidak menjual datamu</p>
-<h2>3. Siapa yang Bisa Melihat Datamu</h2>
+</section>
+<section class="kartu" id="s3">
+<h2><span class="no">3</span>Siapa yang Bisa Melihat Datamu</h2>
 <p>Driver yang menerima pesananmu bisa melihat nama, foto profil, titik jemput dan tujuan, serta nomor HP-mu supaya bisa menghubungimu saat menjemput. Penumpang bisa melihat nama, foto, plat, dan kendaraan driver. Admin Ojekbe bisa melihat data akun dan laporan untuk membantu kamu serta mencatat setoran komisi. Email dan PIN tidak pernah ditampilkan ke pengguna lain</p>
-<h2>4. Penyimpanan dan Layanan Pihak Ketiga</h2>
+</section>
+<section class="kartu" id="s4">
+<h2><span class="no">4</span>Penyimpanan dan Layanan Pihak Ketiga</h2>
 <p>Data disimpan di Supabase dengan server di Tokyo, Jepang. Kode verifikasi dikirim lewat Resend, notifikasi lewat layanan notifikasi Expo, dan peta memakai OpenStreetMap. Nama kota dan cuaca diambil dari Nominatim dan Open-Meteo, yang menerima koordinat perkiraan lokasimu. Karena itu datamu bisa diproses di luar Indonesia. Foto profil disimpan di penyimpanan yang alamat langsungnya tidak diumumkan, tetapi siapa pun yang memegang alamat itu bisa membukanya. Tombol peta membuka Google Maps atau browser, dan di sana berlaku kebijakan penyedianya</p>
 <p>Sebagian data hanya disimpan di perangkatmu dan tidak dikirim ke server: alamat favorit, daftar notifikasi, pilihan bahasa dan tema, jenis kelamin, tanggal lahir, alamat domisili yang kamu isi di Informasi Pribadi, serta salinan riwayat perjalanan di aplikasi. Data ini hilang kalau aplikasi dihapus atau datanya dibersihkan lewat pengaturan HP</p>
-<h2>5. Izin di HP</h2>
+</section>
+<section class="kartu" id="s5">
+<h2><span class="no">5</span>Izin di HP</h2>
 <p>Aplikasi bisa meminta izin lokasi (untuk titik jemput dan posisi driver), kamera dan galeri (untuk foto profil), serta notifikasi (supaya status pesanan tampil dengan benar). Kamu bisa mencabut izin itu kapan saja lewat pengaturan HP, tapi beberapa fitur mungkin tidak jalan tanpanya.</p>
-<h2>6. Hakmu dan Penghapusan Akun</h2>
+</section>
+<section class="kartu" id="s6">
+<h2><span class="no">6</span>Hakmu dan Penghapusan Akun</h2>
 <p>Kamu bisa melihat dan mengubah data dirimu di menu Akun, dan kamu bisa menghapus akunmu kapan saja lewat menu Akun lalu Hapus Akun. Profil, foto profil, nomor HP, email, PIN, laporan, pesan obrolan yang kamu kirim, dan profil driver ikut terhapus. Catatan pesanan yang sudah selesai tetap disimpan tanpa nama, untuk pembukuan pendapatan driver. Akun yang masih punya komisi belum dibayar atau pesanan aktif tidak bisa dihapus sampai urusannya selesai</p>
-
-<h2>7. Menghapus Akun dan Data</h2>
-<p>Penghapusan akun bisa dilakukan sendiri di aplikasi: buka menu Akun, pilih Hapus Akun, lalu masukkan kata sandi. Kalau kamu tidak bisa masuk ke aplikasi, hubungi admin lewat WhatsApp di bawah dan sebutkan email akunmu; kami akan menghapusnya setelah memastikan kamu pemilik akun.</p>
-<div class="kotak">
-<p><strong>Kontak admin Ojekbe</strong></p>
-<p>WhatsApp: <a href="https://wa.me/6282125017327">+62 821-2501-7327</a></p>
+</section>
+<section class="kartu" id="s7">
+<h2><span class="no">7</span>Menghapus Akun dan Data</h2>
+<p>Penghapusan akun bisa dilakukan sendiri di aplikasi: buka menu Akun, pilih Hapus Akun, lalu masukkan kata sandi. Kalau kamu tidak bisa masuk ke aplikasi, hubungi admin lewat email atau WhatsApp di bawah dan sebutkan email akunmu; kami akan menghapusnya setelah memastikan kamu pemilik akun.</p>
+</section>
+<section class="kontak">
+<h2>Kontak admin Ojekbe</h2>
+<p>Ada pertanyaan soal data atau ingin menghapus akun, hubungi kami lewat salah satu jalur ini</p>
+<div class="tombol">
+<a href="mailto:ojekbe@gunungkebun.com"><small>Email</small><strong>ojekbe@gunungkebun.com</strong></a>
+<a href="https://wa.me/6282125017327"><small>WhatsApp</small><strong>+62 821-2501-7327</strong></a>
 </div>
-<p class="kecil">Kebijakan ini bisa diperbarui. Tanggal pembaruan terakhir selalu tercantum di bagian atas halaman ini.</p>
+</section>
+<p class="kaki">Kebijakan ini bisa diperbarui. Tanggal pembaruan terakhir selalu tercantum di bagian atas halaman ini.</p>
 </main>
 </body>
 </html>
